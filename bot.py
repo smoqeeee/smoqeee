@@ -35,8 +35,8 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='!')
 
 @bot.command()
-async def say(ctx, *, arg):
-    await ctx.send(arg):
+async def say(ctx, arg):
+    await ctx.send(arg)
 
 
 @say.error
