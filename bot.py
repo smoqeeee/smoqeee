@@ -16,7 +16,8 @@ class MyClient(discord.Client):
       if message.content.startswith("hello"):
           await message.channel.send('Hello there.')
 
-
+      if message.content.startswith("du hurensohn"):
+          await message.channel.send('du')
 
 
 
