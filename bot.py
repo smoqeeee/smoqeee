@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 import os
 import requests
-client = commands.Bot(command_prefix='4')
+
 class MyClient(discord.Client):
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
@@ -30,10 +30,11 @@ class MyClient(discord.Client):
       
       if message.content.startswith("!invites"):
           await message.channel.send('Its .invites brother')
-
-@client.command()
-async def ping(ctx):
-    await ctx.send('```Current commands: WORKING ON THEM XD```')
+        
+bot = commands.Bot(command_prefix='-')
+@bot.command()
+async def commands(ctx):
+    await ctx.send('Current commands: WORKING ON THEM XD')
 
 
 client = MyClient()
