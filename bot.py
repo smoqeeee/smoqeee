@@ -1,4 +1,5 @@
 import discord
+from discord.ext import commands
 import asyncio
 import os
 import requests
@@ -8,7 +9,7 @@ class MyClient(discord.Client):
        print(client.user.name)
        print(client.user.id)
        print("------------")
-       await client.change_presence(game=discord.Game(name="access with !help"))
+       await client.change_presence(game=discord.Game(name="https://shoppy.gg/@LunaticService"))
 
     async def on_message(self, message):
       if message.author == client.user:
