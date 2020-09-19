@@ -33,7 +33,7 @@ class MyClient(discord.Client):
         
 bot = commands.Bot(command_prefix='-')
 @bot.command()
-async def commands(ctx):
+async def ping(ctx):
     await ctx.send('Current commands: WORKING ON THEM XD')
 
 
