@@ -32,7 +32,7 @@ class MyClient(discord.Client):
           await message.channel.send('Its .invites brother')
 
 @client.command()
-async def help(ctx):
+async def ping(ctx):
     await ctx.send('```Current commands: WORKING ON THEM XD```')
 
 
