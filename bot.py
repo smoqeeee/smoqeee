@@ -21,20 +21,7 @@ class MyClient(discord.Client):
       if message.author == client.user:
             return
 
-        from discord.ext import commands
-        bot = commands.Bot(command_prefix='!')
-
-@bot.command()
-async def say(ctx, *, arg):
-    await ctx.send(arg)
-
-
-@say.error
-async def say_error(ctx, error):
-    if isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send('Please tell me what to say')
-
-     
+       
       if message.content.startswith("Hello"):
           await message.channel.send('Hello there.')
 
@@ -50,7 +37,20 @@ async def say_error(ctx, error):
       if message.content.startswith("!invites"):
           await message.channel.send('Its .invites brother')
         
+ from discord.ext import commands
+        bot = commands.Bot(command_prefix='!')
 
+@bot.command()
+async def say(ctx, *, arg):
+    await ctx.send(arg)
+
+
+@say.error
+async def say_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send('Please tell me what to say')
+
+     
 
 
 client = MyClient()
