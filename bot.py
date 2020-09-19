@@ -3,6 +3,7 @@ from discord.ext import commands
 import asyncio
 import os
 import requests
+client = commands.Bot(command_prefix='x')
 class MyClient(discord.Client):
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
