@@ -27,8 +27,8 @@ class MyClient(discord.Client):
       if message.content.startswith("king"):
           await message.channel.send('spiegel')
       
-     if 'shop' in message.content:
-          await message.channel.send('yes'
+      if message.content.startswith("!invites"):
+          await message.channel.send('Its .invites brother')
 
 
 
