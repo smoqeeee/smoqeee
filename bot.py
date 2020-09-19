@@ -30,7 +30,9 @@ class MyClient(discord.Client):
       if message.content.startswith("!invites"):
           await message.channel.send('Its .invites brother')
 
-
+@client.command()
+async def commands(ctx):
+    await ctx.send('```Current commands: WORKING ON THEM XD```')
 
 
 client = MyClient()
