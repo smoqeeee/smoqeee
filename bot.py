@@ -9,7 +9,7 @@ class MyClient(discord.Client):
        print(client.user.name)
        print(client.user.id)
        print("------------")
-       await client.change_presence(activity=discord.Streaming(name="shoppy.gg/@LunaticService", url = "https://www.twitch.tv/smoqeeee"))
+       await client.change_presence(activity=discord.Streaming(name="shoppy.gg/@LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
     async def on_message(self, message):
       if message.author == client.user:
