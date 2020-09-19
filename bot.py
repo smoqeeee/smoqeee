@@ -8,6 +8,7 @@ class MyClient(discord.Client):
        print(client.user.name)
        print(client.user.id)
        print("------------")
+       await client.change_presence(game=discord.Game(name="access with !help"))
 
     async def on_message(self, message):
       if message.author == client.user:
