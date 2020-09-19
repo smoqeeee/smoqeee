@@ -4,7 +4,7 @@ import os
 import requests
 class MyClient(discord.Client):
     async def on_ready(self):
-        print("Eingeloggt als smoqeee V1.0")
+       print("logged in as smoqeee V1.0")
         print(client.user.name)
         print(client.user.id)
         print("------------")
