@@ -27,9 +27,8 @@ class MyClient(discord.Client):
       if message.content.startswith("king"):
           await message.channel.send('spiegel')
       
-      if message.content.includes("shop"):
-          await message.channel.send('yes')
-
+     if "shop" in message.content:
+           await message.channel.send('yes')
 
 
 
