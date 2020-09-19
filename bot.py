@@ -23,6 +23,13 @@ class MyClient(discord.Client):
 
       if message.content.startswith("du hurensohn"):
           await message.channel.send('du')
+            
+      if message.content.startswith("king"):
+          await message.channel.send('spiegel')
+      
+      if message.content.contains("shop"):
+          await message.channel.send('test')
+
 
 
 
