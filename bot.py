@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 import os
 import requests
-client = commands.Bot(command_prefix='x')
+client = commands.Bot(command_prefix='.')
 class MyClient(discord.Client):
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
@@ -32,7 +32,7 @@ class MyClient(discord.Client):
           await message.channel.send('Its .invites brother')
 
 @client.command()
-async def commands(ctx):
+async def help(ctx):
     await ctx.send('```Current commands: WORKING ON THEM XD```')
 
 
