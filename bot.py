@@ -37,7 +37,7 @@ class MyClient(discord.Client):
       if message.content.startswith("!invites"):
           await message.channel.send('Its .invites brother')
         
- from discord.ext import commands
+ from discord.ext import command
         bot = commands.Bot(command_prefix='!')
 
 @bot.command()
