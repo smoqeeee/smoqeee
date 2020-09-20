@@ -13,8 +13,8 @@ async def on_ready():
 
     
 @client.command()
-async def info(ctx):
- await ctx.send('test')
+async def commands(ctx):
+ await ctx.send('Current Commands: There arent any :KEKW: ')
         
 
 
