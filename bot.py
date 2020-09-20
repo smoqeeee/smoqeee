@@ -7,7 +7,7 @@ import requests
 
 
 
-
+ bot = commands.Bot(command_prefix='!')
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -21,7 +21,7 @@ class MyClient(discord.Client):
       if message.author == client.user:
             return
 
-        bot = commands.Bot(command_prefix='!')
+       
 
 @bot.command()
 async def say(ctx, arg):
