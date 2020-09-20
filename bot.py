@@ -14,7 +14,7 @@ async def on_ready():
     
 @client.command()
 async def commands(ctx):
- await ctx.send('Current Commands: There arent any yet. ')
+ await ctx.send('Current Commands: !lenny ')
 
 @client.command()
 async def lenny(ctx):
