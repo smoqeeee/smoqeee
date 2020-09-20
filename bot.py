@@ -4,7 +4,7 @@ import asyncio
 import os
 import requests
 
-client = commands.Bot(command_prefix = '!')
+client = commands.Bot(command_prefix = 's!')
 
 @client.event
 async def on_ready():
@@ -14,7 +14,7 @@ async def on_ready():
     
 @client.command()
 async def commands(ctx):
- await ctx.send('Current Commands: There arent any :FeelsThinkingMan: ')
+ await ctx.send('Current Commands: There arent any yet. ')
         
 
 
