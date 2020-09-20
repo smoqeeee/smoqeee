@@ -22,15 +22,7 @@ class MyClient(discord.Client):
       if message.author == client.user:
             return
 
-   bot = commands.Bot(command_prefix='$')
-
-@bot.command()
-async def test(ctx):
-    pass
-    
-
-
-    
+ 
       if message.content.startswith("Hello"):
           await message.channel.send('Hello there.')
 
