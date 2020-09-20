@@ -38,7 +38,7 @@ class MyClient(discord.Client):
           await message.channel.send('Its .invites brother')
 bot = commands.Bot(command_prefix='$')
 
-@bot.command()
+@client.command()
 async def test(ctx):
  await ctx.send('test')
         
