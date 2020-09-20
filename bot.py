@@ -7,9 +7,10 @@ import requests
 
 
 
+ 
+class MyClient(discord.Client):
  bot = commands.Bot(command_prefix='!')
 
-class MyClient(discord.Client):
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
        print(client.user.name)
