@@ -9,7 +9,7 @@ import requests
 
  
 class MyClient(discord.Client):
- bot = commands.Bot(command_prefix='!'):
+ 
 
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
@@ -22,11 +22,14 @@ class MyClient(discord.Client):
       if message.author == client.user:
             return
 
-       
+   bot = commands.Bot(command_prefix='$')
 
 @bot.command()
-async def say(ctx, arg):
-    await ctx.send(arg)
+async def test(ctx):
+    pass
+    
+
+
     
       if message.content.startswith("Hello"):
           await message.channel.send('Hello there.')
