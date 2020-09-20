@@ -9,7 +9,7 @@ import requests
 
  
 class MyClient(discord.Client):
- bot = commands.Bot(command_prefix='!')
+ bot = commands.Bot(command_prefix='!'):
 
     async def on_ready(self):
        print("logged in as smoqeee V1.0")
