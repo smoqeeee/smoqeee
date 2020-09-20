@@ -48,7 +48,7 @@ async def say(ctx, arg):
     
     
 @say.error
-async def say_error(ctx, error)
+async def say_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send('Please tell me what to say')
 
