@@ -36,6 +36,11 @@ class MyClient(discord.Client):
       
       if message.content.startswith("!invites"):
           await message.channel.send('Its .invites brother')
+bot = command.Bot(command_prefix='$')
+
+@bot.command()
+async def test(ctx):
+ await ctx.send('test')
         
 
 
