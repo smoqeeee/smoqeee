@@ -7,7 +7,11 @@ import requests
 
 
 
+bot = commands.Bot(command_prefix='!')
 
+@bot.command()
+async def say(ctx, arg):
+    await ctx.send(arg)
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -40,11 +44,8 @@ class MyClient(discord.Client):
         
 
 
-bot = commands.Bot(command_prefix='!')
 
-@bot.command()
-async def say(ctx, arg):
-    await ctx.send(arg)
+
     
     
 @say.error
