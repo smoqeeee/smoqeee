@@ -7,7 +7,7 @@ import requests
 client = commands.Bot(command_prefix = '!')
 
 @client.event
-  async def on_ready(self):
+  async def on_ready():
        print("logged in as smoqeee V1.0")
        await client.change_presence(activity=discord.Streaming(name="shoppy.gg/@LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
