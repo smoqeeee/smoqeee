@@ -9,7 +9,7 @@ client = commands.Bot(command_prefix = 's!')
 @client.event
 async def on_ready():
   print('logged in as smoqeee')
-  await client.change_presence(activity=discord.Streaming(name="shoppy.gg/@LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
+  await client.change_presence(activity=discord.Streaming(name="LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
     
 @client.command()
