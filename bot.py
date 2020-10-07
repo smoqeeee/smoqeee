@@ -20,11 +20,11 @@ await message.channel.send('Hello there.')
           
 @client.command()
 async def commands(ctx):
- await ctx.send('Current Commands: s!lenny ')
+await ctx.send('Current Commands: s!lenny ')
 
 @client.command()
 async def lenny(ctx):
- await ctx.send('( ͡° ͜ʖ ͡°) ')
+await ctx.send('( ͡° ͜ʖ ͡°) ')
         
 
 
