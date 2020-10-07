@@ -14,9 +14,9 @@ async def on_ready():
   
   
 if message.content.startswith("Hello"):
-          await message.channel.send('Hello there.')
+await message.channel.send('Hello there.')
 if message.content.startswith("hello"):
-          await message.channel.send('Hello there.')
+await message.channel.send('Hello there.')
           
 @client.command()
 async def commands(ctx):
