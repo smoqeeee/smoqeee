@@ -11,7 +11,13 @@ async def on_ready():
   print('logged in as smoqeee')
   await client.change_presence(activity=discord.Streaming(name="LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
 
-    
+  
+  
+if message.content.startswith("Hello"):
+          await message.channel.send('Hello there.')
+if message.content.startswith("hello"):
+          await message.channel.send('Hello there.')
+          
 @client.command()
 async def commands(ctx):
  await ctx.send('Current Commands: s!lenny ')
