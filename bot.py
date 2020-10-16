@@ -4,14 +4,29 @@ import asyncio
 import os
 import requests
 
-client = commands.Bot(command_prefix = 's!')
+client = commands.Bot(command_prefix='l!')
+
 
 @client.event
 async def on_ready():
-  print('logged in as smoqeee')
-  await client.change_presence(activity=discord.Streaming(name="LunaticService", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"))
+    print('logged in as smoqeee')
+    await client.change_presence(
+        activity=discord.Activity(type=discord.ActivityType.watching, name="l!help"))
 
-        
+
+@client.command()
+async def commands(ctx):
+    await ctx.send('Current Commands: l!lenny ')
+
+
+@client.command()
+async def lenny(ctx):
+    await ctx.send('( ͡° ͜ʖ ͡°) ')
+
+@client.command()
+async def help(ctx):
+    await ctx.send('Not ready yet. ')
+    
 
 
 client.run(str(os.environ.get('BOT_TOKEN')))
