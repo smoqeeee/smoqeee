@@ -11,9 +11,9 @@ client = commands.Bot(command_prefix='l!')
 async def on_ready():
     print('logged in as smoqeee')
     await client.change_presence(
-        activity=discord.Activity(type=discord.ActivityType.watching, name="l!help"))
+        activity=discord.Activity(type=discord.ActivityType.watching, name="users"))
 @client.command()
-async def help(ctx):
+async def test(ctx):
     await ctx.send('not ready yet ')
 
 
