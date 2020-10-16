@@ -23,10 +23,6 @@ async def commands(ctx):
 async def lenny(ctx):
     await ctx.send('( ͡° ͜ʖ ͡°) ')
 
-@client.command()
-async def help(ctx):
-    await ctx.send('Not ready yet. ')
-    
 
 
 client.run(str(os.environ.get('BOT_TOKEN')))
