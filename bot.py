@@ -16,7 +16,7 @@ async def on_ready():
     print('-----')
 
 newUserDMMessage = "WELCOME!"
-    await client.change_presence(
+await client.change_presence(
         activity=discord.Activity(type=discord.ActivityType.watching, name="users"))
 
 
