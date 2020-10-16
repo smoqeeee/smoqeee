@@ -13,9 +13,6 @@ async def on_ready():
     print(client.user.id)
     print('-----')
 
-
-newUserDMMessage = "WELCOME!"
-
 await client.change_presence(
     activity=discord.Activity(type=discord.ActivityType.watching, name="users"))
 
@@ -34,7 +31,7 @@ async def commands(ctx):
 async def lenny(ctx):
     await ctx.send('( ͡° ͜ʖ ͡°) ')
 
-
+newUserDMMessage = "WELCOME!"
 # Public Welcome
 @client.event
 async def on_member_join(member):
