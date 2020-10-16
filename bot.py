@@ -12,6 +12,9 @@ async def on_ready():
     print('logged in as smoqeee')
     await client.change_presence(
         activity=discord.Activity(type=discord.ActivityType.watching, name="l!help"))
+@client.command()
+async def help(ctx):
+    await ctx.send('not ready yet ')
 
 
 @client.command()
