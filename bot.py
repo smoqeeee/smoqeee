@@ -3,7 +3,7 @@ from discord.ext import commands
 import asyncio
 import os
 import requests
-import all necessary commands and libraries
+
 
 client = commands.Bot(command_prefix='l!')
 
