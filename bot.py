@@ -3,6 +3,7 @@ from discord.ext import commands
 import asyncio
 import os
 import requests
+import all necessary commands and libraries
 
 client = commands.Bot(command_prefix='l!')
 
@@ -25,6 +26,19 @@ async def commands(ctx):
 @client.command()
 async def lenny(ctx):
     await ctx.send('( ͡° ͜ʖ ͡°) ')
+
+
+
+
+
+#Public Welcome
+@client.event
+async def on_member_join(member):
+    print("Recognized that " + member.name + " joined")
+    await client.send_message(member, newUserDMMessage)
+    await client.send_message(discord.Object(id='746442045052157952'), 'Welcome!')
+    print("Sent message to " + member.name)
+    print("Sent message about " + member.name + " to #🌌〕new-people")
 
 
 
