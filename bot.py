@@ -12,19 +12,6 @@ async def on_ready():
     print(client.user.name)
     print('-----')
 
-
-newUserMessage = """ 
-    Welcome
-    to
-    Lunatic Service!
-   
- """
-
-@client.event
-async def on_member_join(member):
-    print("Recognised that a member called " + member.name + " joined")
-    await client.send_message(member, newUserMessage)
-    print("Sent message to " + member.name)
 @client.command()
 async def test(ctx):
     await ctx.send('not ready yet ')
