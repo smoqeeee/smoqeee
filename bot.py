@@ -10,9 +10,17 @@ client = commands.Bot(command_prefix='l!')
 
 @client.event
 async def on_ready():
-    print('logged in as smoqeee')
+    print('logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('-----')
+
+newUserDMMessage = "WELCOME!"
     await client.change_presence(
         activity=discord.Activity(type=discord.ActivityType.watching, name="users"))
+
+
+
 @client.command()
 async def test(ctx):
     await ctx.send('not ready yet ')
