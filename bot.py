@@ -11,9 +11,6 @@ async def on_ready():
     print('logged in as')
     print(client.user.name)
     print('-----')
-@bot.event
-async def on_ready():
-    print('Bot is now working!')
     await bot.change_presence(activity=discord.Playing(name='Bot' ,emoji='🖥️'))
 @client.command()
 async def test(ctx):
