@@ -11,7 +11,8 @@ async def on_ready():
     print('logged in as')
     print(client.user.name)
     print('-----')
-    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="users"))
+    activity = discord.Game(name="s! | Lunatic", type=3)
+    await bot.change_presence(status=discord.Status.DoNotDisturb, activity=activity)
 @client.command()
 async def test(ctx):
     await ctx.send('not ready yet ')
