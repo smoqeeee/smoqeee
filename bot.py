@@ -11,7 +11,7 @@ async def on_ready():
     print('logged in as')
     print(client.user.name)
     print('-----')
-    activity = discord.Game(name="s! | Lunatic", type=3)
+    activity = discord.Game(name="l!", type=3)
     await client.change_presence(status=discord.Status.dnd, activity=activity)
 @client.command()
 async def test(ctx):
