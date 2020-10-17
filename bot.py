@@ -12,7 +12,7 @@ async def on_ready():
     print(client.user.name)
     print('-----')
     activity = discord.Game(name="s! | Lunatic", type=3)
-    await client.change_presence(status=discord.Status.DoNotDisturb, activity=activity)
+    await client.change_presence(status=discord.Status.DnD, activity=activity)
 @client.command()
 async def test(ctx):
     await ctx.send('not ready yet ')
